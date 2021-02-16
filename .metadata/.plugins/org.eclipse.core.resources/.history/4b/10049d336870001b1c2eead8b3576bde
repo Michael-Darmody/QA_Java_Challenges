@@ -1,0 +1,23 @@
+package com.qa.results;
+
+public class Results {
+	public static int chemistry;
+	public static int physics;
+	public static int biology;
+	public static int total = chemistry + physics + biology;
+	public static int percentage;
+	
+	public static void main(String[] args) {
+		method1(100, 100, 100);
+
+	}
+	
+	public static void method1(int mark1, int mark2, int mark3) {
+		chemistry = mark1;
+		physics = mark2;
+		biology = mark3;
+		System.out.println("Student achieved: " + chemistry + " in chemistry, "
+				+ physics + " in physics, " + biology + " in biology."
+				+ " For a total of: " + total + " marks.");
+	}
+}
